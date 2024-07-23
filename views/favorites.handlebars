@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="./css/favorites.css" />
+<div>
+        <a href="/">Home</a>
+</div>
+
+<div class="testing">
+        {{#each movies as |movie|}}
+        <div class="card">
+                <h2>{{movie.title}}</h2>
+                <img src="https://image.tmdb.org/t/p/w200/{{movie.thumbnail}}">
+        </div>
+        {{/each}}
+
+</div>
+
+<script src="/js/script.js"></script>
